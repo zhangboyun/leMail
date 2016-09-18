@@ -1,0 +1,381 @@
+@charset "utf-8";
+/*CSS Reset*/
+html{color:#000; overflow-y:scroll;}
+body{font-size:12px;font-family: "Microsoft YaHei",Arial,sans-serif;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;resize:none;}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+.hidden{display:none;}
+a{text-decoration: none;color:#2b6893;}
+/*清除浮动*/
+.clearfix{zoom:1;}
+.clearfix:after{content:'';display:block;visibility:hidden;clear:both;height:0;}
+/*浮动*/
+.fr{float:right;}
+.fl{float:left;}
+/* reset end */
+
+/* 版心*/
+.leMail-container{margin:0 auto; width: 1200px; position: relative;/*border:1px solid red;*/}
+a{color:#333;}
+
+/* header start */
+.leMail-header{width:100%;}
+.leMail-header .leMail-links{background:#f7f7f7; height:30px;}
+.leMail-links-leftMenu,.leMail-links-leftMenu li,.leMail-links-rightMenu li{float:left;}
+.leMail-header .leMail-links .leMail-links-rightMenu{float:right;}
+.leMail-links-leftMenu li,.leMail-links-rightMenu li{position:relative; line-height:30px;}
+.leMail-links-leftMenu>li>a,.leMail-links-rightMenu>li>a{padding:0 13px; color:#999;}
+.leMail-links-leftMenu{margin-left:-13px;}
+.leMail-links-leftMenu .leMail-select{padding-right:13px; overflow:hidden;}
+.leMail-links-leftMenu .leMail-select>a{position:relative; padding-right:10px;}
+.leMail-links-leftMenu .leftMenu-toTop,.leMail-links-leftMenu .leftMenu-toDown{font-size:8px !important;}
+
+/* select 下拉部分*/
+.leMail-select ul{position: absolute; top:-200px; left:0; background: #fff; border:1px solid #dfdfdf; border-top:none; transition:all .3s linear; z-index:2;}
+.leMail-select ul li{position:relative; padding:0 7px;}
+.leMail-select ul li:hover span{color:red;}
+.leMail-select ul li span{padding:0 5px;}
+.leMail-select ul .leMail-select-fir{ padding-left:6px;}
+.leMail-select ul .leftMenu-toTop{position:absolute; top:0; right:-16px; }
+
+/* hov 效果*/
+.leMail-select:hover{overflow: visible}
+.leMail-select:hover ul{top:0;}
+/*select end */
+
+/* 右侧ul start*/
+.leMail-links-rightMenu .rightMenu-login{position:relative;}
+.leMail-links-rightMenu .rightMenu-login:after{display:block; position:absolute; content:''; width:2px; height:12px; top:9px; right:0; background: #ccc;}
+.leMail-links-rightMenu .rightMenu-shopping-car{background:url("http://img1.hdletv.com/file/20160112/default/17965140151500598") -2px center no-repeat; background-size:12px 12px;}
+
+.leMail-rightMenu-phone{position: relative;}
+.leMail-rightMenu-phone div{display:none; position:absolute; padding-top:20px; width:260px; top:30px; right:0; border:1px solid #dfdfdf; z-index:3; background:#fff; }
+.leMail-rightMenu-phone div span{position:absolute; width:0; height:0; border-style:solid; border-width:6px; border-color:transparent transparent #fff transparent; top:-12px; right:8px;}
+.leMail-rightMenu-phone div dl{float:left;margin-left:12px;}
+.leMail-rightMenu-phone div dl dt{margin-bottom:-8px; color:#999;}
+.leMail-rightMenu-phone div dl dd{text-align:center;}
+
+.leMail-rightMenu-phone:hover div{display:block;}
+
+/* header center start*/
+.leMail-menu h1{float:left; width:500px; height:100px;}
+.leMail-menu h1 a{float:left; width:327px; height:100px; margin-left:14px; background:url('http://img1.hdletv.com/file/20160111/default/17862742355368334') 0 center no-repeat; background-size: 327px auto;}
+.leMail-menu .leMail-container div{float:right; position:relative; padding-top:34px; width:606px;}
+.leMail-menu .leMail-container div input,.leMail-menu .leMail-container div a{float:left;}
+.leMail-menu .leMail-container div input{border:2px solid #c80000;}
+.leMail-menu .leMail-container div .leMail-menu-inputFir{padding-left:10px; height:36px; width:490px; outline:none; font-size: 14px;}
+.leMail-menu .leMail-container div .leMail-menu-search{height:40px; width:100px; background: #c80000; color:#fff; font-size:16px;}
+.leMail-menu .leMail-container div a{position:absolute; color:#666; width: 48px; height:36px; top:46px;}
+.leMail-menu .leMail-container div .leMail-menu-superPhone{right:116px;}
+.leMail-menu .leMail-container div .leMail-menu-superPad{right:176px;}
+.leMail-menu .leMail-container span{position:absolute; width:44px; height:20px; text-align:center; line-height:20px; background:#999; color:#fff; border-radius:2px; top:6px; right:0;}
+.leMail-menu .leMail-container div ul{display: none; position:absolute; width:500px; border:1px solid #dfdfdf; top:72px; left:0; z-index:5}
+.leMail-menu .leMail-container div ul li{height:32px; line-height:32px; color:#666; cursor:default; background:#fff;}
+.leMail-menu .leMail-container div ul li:hover{background:#c80000; color:#fff;}
+
+/* 导航部分 start*/
+.leMail-nav{height:32px; border-bottom: 2px solid #333;}
+.leMail-nav .leMail-container div,.leMail-nav .leMail-nav-list,.leMail-nav ul li{float:left;}
+.leMail-nav .leMail-nav-right{float:right;}
+.leMail-nav .leMail-container div{width:220px; height:32px; background:#333; text-align:center; cursor:default;}
+.leMail-nav .leMail-container div span{display:inline-block; padding-left:35px; line-height:32px; font-size:14px; color:#fff; text-align:center; background: url(http://img1.hdletv.com/file/20150914/default/7622647954875928) left center no-repeat;}
+.leMail-nav ul li{height:32px; line-height:32px;}
+.leMail-nav ul li a{display:inline-block;height:32px; line-height:32px; }
+.leMail-nav .leMail-nav-list li a{margin-left:38px; padding-top:1px; font-size:14px; color:#303233;}
+.leMail-nav .leMail-nav-right li a{padding:0 12px; color:#666;}
+.leMail-nav ul li a:hover{color:#c80000;}
+/*   header end   */
+
+/* banner start */
+.le-center-menu{position:relative; width:100%; height:460px; min-width:1200px;}
+.le-center-menu .le-center-box{position:relative; width:100%; height:460px; /*overflow-x:hidden;*/}
+.le-center-menu .le-center-box .le-banner-wrap{position:absolute; width:600%; top:0; left:0;}
+.le-center-menu .le-center-box .le-banner-wrap li{float:left; height:460px; width:16.66%; }
+.le-banner-fir{background:rgb(208,46,0);}
+.le-banner-sec{background:rgb(17,17,17);}
+.le-banner-thi{background:rgb(225,209,183);}
+.le-banner-for{background:rgb(97,16,180);}
+.le-banner-fiv{background:rgb(255,120,0);}
+.le-banner-six{background:rgb(17,17,17)}
+.le-center-menu .le-center-box .le-banner-wrap li a{display:block; width:100%; height:460px;}
+.le-center-menu .le-center-box .le-banner-wrap li a img{display: block; margin:0 auto;}
+.le-center-menu .leMail-container{height:460px;z-index:2; }
+.le-center-menu .le-banner-tip{position:absolute; height:20px; right:0; bottom:0}
+.le-center-menu .le-banner-tip li{float:left;}
+.le-center-menu .le-banner-tip li a{display:block; width:8px; height:8px; margin:2px 5px; background:rgba(76,76,76,.5); border-radius:100%;  }
+.le-center-menu .le-banner-tip .curTip a{margin:0 5px; border:2px solid #808080; width:8px; height:8px; background-color: rgba(0, 0, 0, 0); border-radius:100%}
+.le-center-menu .leMail-container .le-banner-btn{position:absolute; width:30px; height:30px; top:200px; }
+.le-center-menu .leMail-container .le-banner-btn i{font-size:36px; color:#fff;}
+.le-center-menu .leMail-container .le-banner-btnR{right:10px;}
+.le-center-menu .leMail-container .le-banner-btnL{left:230px;}
+
+/* 右侧列表 */
+.le-center-menu .leMail-container .le-banner-list{position:absolute; height:460px; background:rgba(255,255,255,.8);box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.18);}
+.le-center-menu .leMail-container .le-banner-list li{width:220px; height:50px;}
+.le-center-menu .leMail-container .le-banner-list li a{display:block; height:49px; width:160px; margin:0 30px; border-bottom:1px solid #fff;}
+.le-center-menu .leMail-container .le-banner-list li a span{float:left; height:48px; line-height:48px; font-size:14px;}
+.le-center-menu .leMail-container .le-banner-list li a i{float:right; margin-top:12px; font-size:20px;}
+.le-center-menu .leMail-container .le-banner-list li:hover{background:#fff;}
+.le-center-menu .leMail-container .le-banner-list li:hover a{color:#c80000;}
+.le-center-menu .leMail-container .le-banner-list .le-banner-listL a{border-bottom:0;}
+.le-center-menu .leMail-container .cur{background:#fff;}
+
+/* hover显示的部分 */
+.le-center-menu .le-list-ul{position:absolute; height:460px; background:#fff; box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.18); left:220px;}
+.le-center-menu .le-list-ul .le-show{width:980px;}
+
+/* 一些公共部分*/
+.le-center-menu .le-list-ul .le-list-show {width:980px; height:460px;}
+.le-center-menu .le-list-ul .le-list-show dl{float:left;}
+.le-center-menu .le-list-ul .le-list-show dl dt{padding:47px 0 17px 0; border-bottom: 1px solid #eaeaea; font-size:14px; color:#333; line-height:20px;}
+.le-center-menu .le-list-ul .le-list-show dl dd:hover a{color:#c80000;}
+
+/* le-tv */
+.le-center-menu .le-list-ul .le-tv-show{display:none;}
+.le-center-menu .le-list-ul .le-tv-show dl{margin:0 15px 0 35px; width:130px;}
+.le-center-menu .le-list-ul .le-tv-show dl dt{margin-bottom:4px; width:130px;}
+.le-center-menu .le-list-ul .le-tv-show dl dd{padding-left:6px; height:48px; line-height:48px;}
+.le-center-menu .le-list-ul .le-tv-show dl dd a{color:#777;}
+.le-center-menu .le-list-ul .le-tv-show dl dd i{font-size:10px; color:#000;}
+.le-center-menu .le-list-ul .le-tv-show .le-tv-right{float:right; padding:10px;}
+.le-center-menu .le-list-ul .le-tv-show .le-tv-right a{display:block;}
+.le-center-menu .le-list-ul .le-tv-show .le-tv-right a:nth-child(2){padding-top:10px;}
+
+/* le-phone */
+.le-center-menu .le-list-ul .le-phone-show{display:none;}
+.le-center-menu .le-list-ul .le-phone-show dl:nth-child(1){width:440px;}
+.le-center-menu .le-list-ul .le-phone-show dl:nth-child(2){width:220px;}
+.le-center-menu .le-list-ul .le-phone-show dl dt{margin:0 20px 4px 35px;}
+.le-center-menu .le-list-ul .le-phone-show dl dd{float:left; margin-left:35px; width:185px; height:40px;padding:20px 0 25px 0;}
+.le-center-menu .le-list-ul .le-phone-show dl dd img,.le-center-menu .le-list-ul .le-phone-show dl dd a{ vertical-align:middle; }
+.le-center-menu .le-list-ul .le-phone-show div{float:right; padding:10px 10px 0 0;}
+.le-center-menu .le-list-ul .le-phone-show dd img{vertical-align:middle;}
+
+/* 酷派 */
+.le-center-menu .le-list-ul .le-eco-show{display:none; width:auto;}
+.le-center-menu .le-list-ul .le-eco-show dt{margin: 0 20px 4px 35px;}
+.le-center-menu .le-list-ul .le-eco-show dd{padding: 0 20px 0 35px; width: 165px; height:40px;}
+.le-center-menu .le-list-ul .le-eco-show dd img{vertical-align:middle;}
+
+
+.le-main-active .leMail-container{padding-top:22px;}
+.le-main-active .le-active-fir{margin-bottom:22px; margin-left:-6px; height:190px; border-bottom:1px solid #ebebeb;}
+.le-main-active .le-active-fir dl dd{height:40px; line-height:40px; text-align:center;}
+.le-main-active .le-active-fir dl:hover dd a{color:#c80000;}
+.le-main-active .le-active-sec{float:left; margin-left:-6px;}
+.le-main-active .le-active-fir dl,.le-main-active .le-active-sec li,.le-main-active .le-active-thi,.le-main-active .le-active-for{margin-left:6px; float:left;}
+.le-main-active .le-active-thi,.le-main-active .le-active-for{width:235px; height:210px; background: #f9f9f9;}
+.le-main-active .le-active-thi p:nth-child(1){margin:14px 0 0 22px; padding-left:22px; height:24px; line-height:24px; background:url(http://img1.hdletv.com/file/20160427/default/1223455310518789)0 4px no-repeat; background-size:12px 12px;}
+.le-main-active .le-active-thi p:nth-child(2){padding-top:17px;}
+.le-main-active .le-active-thi p:nth-child(2) a,.le-main-active .le-active-thi p:nth-child(4) a{display:block; margin:0 auto; width:196px; height:36px; line-height:36px; text-align:center;  border-radius:2px; color:#fff;}
+.le-main-active .le-active-thi p:nth-child(2) a{ background:red;}
+.le-main-active .le-active-thi p:nth-child(2) a:hover{background:#c80000;}
+.le-main-active .le-active-thi p:nth-child(3),.le-main-active .le-active-thi p:nth-child(5){padding: 6px 0 0 22px; width: 195px; line-height:16px; color:#999;}
+.le-main-active .le-active-thi p:nth-child(4){padding-top:13px;}
+.le-main-active .le-active-thi p:nth-child(4) a{background:#ff7800}
+.le-main-active .le-active-for p:nth-child(1){margin: 14px 0 0 22px; padding-left: 22px; height:24px; color:#c80000; font-size:14px; font-weight:800; background:url(http://img3.hdletv.com/file/20160427/default/1226049865414355) 0 4px no-repeat; background-size:auto 14px;}
+.le-main-active .le-active-for p a{float:right; margin-right:14px; font-weight:400; color:#333; font-size:12px;}
+.le-main-active .le-active-for ul{margin:0 auto; padding-top:5px; width:186px;}
+.le-main-active .le-active-for ul li{height:30px; line-height:30px;}
+.le-main-active .le-active-for ul li span:nth-child(1){display:inline-block; color: #c80000; padding-right: 13px;}
+.le-main-active .le-active-for ul li span:nth-child(2){color:#323333;}
+.le-main-active .le-active-for ul li a:hover span:nth-child(2){color:#c80000;}
+
+
+
+.le-story .leMail-container .le-story-firF{height:700px;}
+.le-story .le-story-head{height:100px;}
+.le-story .le-story-head h3,.le-story .le-story-head .le-story-more{padding:51px 5px 17px 5px;}
+.le-story .le-story-head h3{float:left}
+.le-story .le-story-head .le-story-more{float:right; /*vertical-align:1px;*/}
+.le-story .le-story-head h3 span:nth-child(1){color:#2d6cd4; font-size:16px; font-weight:800;}
+.le-story .le-story-head h3 span:nth-child(2){ padding-left:23px; color:#2d6cd4; font-size:18px; font-weight:800;}
+
+.le-story .le-story-head .le-story-more i{font-size:20px; vertical-align:middle;}
+.le-story .le-story-head .le-story-more span{padding-left:16px; font-size:12px; font-weight:700;}
+.le-story .le-story-head .le-story-more a:hover{color:#c80000}
+.le-story .le-story-firF .le-story-content{position:relative;}
+.le-story .le-story-content>div{float:left;}
+.le-story .le-story-firF .le-story-content>div:nth-child(1){width:350px; height:400px;}
+.le-story-firF .le-story .le-story-content>div:nth-child(2),.le-story-contTwo{padding:0 45px 0 44px; width:280px; height:399px; border:1px solid #e8e8e8;
+}
+.le-story-firF .le-story .le-story-content>div:nth-child(3),.le-story-contH399{margin-left:-1px; padding:0 17px; width:205px; height:399px; border:1px solid #e8e8e8;}
+.le-story-firF .le-story .le-story-content>div:nth-child(4),
+.le-story-firF .le-story .le-story-content>div:nth-child(5),{margin-left:-1px; width:237px; height:199px; border:1px solid #e8e8e8;}
+.le-story-contH199{width:237px; height:199px; border:1px solid #e8e8e8;}
+.le-story-contFive{margin-top:-1px;}
+.le-story-firF .le-story .le-story-content>div:nth-child(6),.le-story-movie{position:relative; width:350px; height:201px; background:url(http://img2.hdletv.com/ag/20160818/default/10964795884499065)center center no-repeat;}
+.le-story-firF .le-story .le-story-content>div:nth-child(7),.le-story-contSeven{margin-top:-1px; padding:0 45px 0 44px; width:280px; height:200px; border: 1px solid #e8e8e8;}
+.le-story-firF .le-story .le-story-content>div:nth-child(8),.le-story-contW478{margin:-1px 0 0 -1px; width:478px; height:200px; border:1px solid #e8e8e8;}
+.le-story-contTwo h4,.le-story-contH399 h4{padding-top:65px; height:22px; line-height: 22px; text-align: center;font-size:16px; color:#444; font-weight:700;}
+.le-story-contTwo p.le-story-des,.le-story-contH399 p.le-story-des{padding-top:13px; height:36px; line-height:18px; text-align:center; font-size:12px; color:#666;}
+.le-story-contTwo p.le-story-img{margin:0 auto; padding-top:16px;width:200px; height:200px;}
+.le-story-contTwo p.le-story-pri{padding-top:4px;}
+.le-story-contTwo p.le-story-pri,.le-story-contH399 p.le-story-pri{height:18px; line-height:18px; text-align:center; font-size:14px; color:#d70000;}
+.le-story-contH399 p.le-story-img{margin:0 auto; padding-top:23px; width:170px; height:170px;}
+.le-story-contH399 p.le-story-pri{padding-top:27px;}
+.le-story-contH199 p:nth-child(1){margin: 0 auto; width:130px; height:130px;}
+.le-story-contH199 p:nth-child(2){padding-top:10px; color:#444; font-weight:700;}
+.le-story-contH199 p:nth-child(2),.le-story-contH199 p:nth-child(3),.le-story-contSeven p.le-story-des,.le-story-contW478 .le-story-des .le-story-contPri{height:18px; line-height:18px; text-align:center;}
+.le-story-contH199 p:nth-child(3){padding-top:8px; color:#d70000;}
+.le-story-movie p,.le-story-movieSmall p{position:absolute; width:100%; height:32px; line-height:32px; bottom:0; left:0; text-align:center; background-color:rgba(0,0,0,0.5); color:#fff; font-size:14px;}
+.le-story-movie span,.le-story-movieSmall span{position:absolute; width:25px; height:25px; top:7px; right:7px; background-color:rgba(0,0,0,0.5); text-align:center;}
+.le-story-movie span i,.le-story-movieSmall span i{font-size:20px; color:#fff;}
+.le-story-contSeven h4,.le-story-contW478 .le-story-des h4{padding-top:30px; height:26px; line-height:26px; text-align:center; font-size:16px; color:#444; font-weight:700;}
+.le-story-contSeven p.le-story-des{padding-top:8px;}
+.le-story-contSeven p.le-story-img{margin:0 auto; width:110px; height:110px;}
+.le-story-contW478 div.le-story-img{float:left; padding:15px 30px 14px 30px; width:170px; height: 170px;}
+.le-story-contW478 .le-story-des{float:left; width:220px;}
+.le-story-contW478 .le-story-des h4{padding-top:45px;}
+.le-story-contW478 .le-story-des .le-story-contDes{padding-top:13px; height:36px; line-height:18px; text-align:center; color:#666;}
+.le-story-contW478 .le-story-des .le-story-contPri{font-size:14px; color:#d70000;}
+/* 2F start*/
+.le-story-secF .le-story-content div:nth-child(1){width:240px; height:400px;}
+.le-story-movieSmall{position:relative; width:240px; height:201px; background:url(http://img2.hdletv.com/ag/20160725/default/8915035570760563)center center no-repeat}
+.le-story-secF .le-story-content .le-story-contH199{margin-top:-1px;}
+
+.le-3F-content2 .le-story-contH199{float:left;}
+.le-3F-content4>div:nth-child(3){margin-top:-4px;}
+
+.le-5F-content4 .le-story-contL{margin-top:-4px; width:239px; height:199px; border:1px solid #e8e8e8;}
+.le-5F-content4 .le-story-contL ul li{border-top:1px solid #e8e8e8}
+.le-5F-content4 .le-story-contL ul .le-contL-li a{display:block; padding:9px 12px 0 12px; width:215px; height:50px;}
+.le-5F-content4 .le-story-contL .le-contL-li .le-contL-code{float:left; padding-top:10px; width:48px; height:20px; line-height:20px; text-align:center; color:#c80000}
+.le-5F-content4 .le-story-contL .le-contL-li .le-contL-des{float:right; padding-top: 10px; width:156px; height: 20px; line-height: 20px; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight:800;}
+
+.le-5F-content4 .le-story-contL .le-contL-li .cur-img,.le-5F-content4 .le-story-contL .le-contL-li .cur-des{display: none;}
+/*选中的class名是cur，样式如下  */
+
+.le-5F-content4 .le-story-contL .curL .le-contL-code,.le-5F-content4 .le-story-contL .curL .le-contL-des{display: none;}
+.le-5F-content4 .le-story-contL .curL a{display:block; padding:9px 12px 0 12px; width:215px;  height:70px;/*overflow:hidden;*/}
+.le-5F-content4 .le-story-contL .curL .cur-img{float:left; width:48px; height:60px;}
+.le-5F-content4 .le-story-contL .curL .cur-des {float:right; padding-top:0; width:156px; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; color:#c80000; font-weight:800;}
+
+.le-story-sixF .le-story-content .le-cont-left,.le-story-sixF .le-story-content .le-cont-right{float:left;}
+.le-story-sixF .le-story-content .le-cont-left{border-top: 1px solid #7964e9;}
+.le-story-sixF .le-story-content .le-cont-left h4,.le-story-sixF .le-story-content .le-cont-right h4{padding:0 5px; height:54px; line-height: 54px; font-size:14px;}
+.le-story-sixF .le-story-content .le-cont-left>div,.le-story-sixF .le-story-content .le-cont-left dl{float:left;}
+.le-story-sixF .le-story-content .le-cont-left dl{position:relative; padding-left:15px;}
+.le-story-sixF .le-story-content .le-cont-left dl dd{height:20px; line-height:20px; text-align: center;}
+.le-story-sixF .le-story-content .le-cont-left dl .le-movie-name{color:#333; font-weight:800;}
+.le-story-sixF .le-story-content .le-cont-left dl .le-movie-time{color:#8c8c8c;}
+/*  hover  */
+.le-story-sixF .le-story-content .le-cont-left dl .le-movie-buy{display:none; position:absolute; width:130px; height:30px; line-height:30px; background:#c80000; bottom:0; left:15px;}
+.le-story-sixF .le-story-content .le-cont-left dl .le-movie-buy a{color:#fff;font-size:14px;}
+.le-story-sixF .le-story-content .le-cont-left dl:hover .le-movie-buy{display: block;}
+.le-story-sixF .le-story-content .le-cont-left dl:hover .le-movie-name{opacity:0;}
+.le-story-sixF .le-story-content .le-cont-right{margin-left:20px; width:590px; height:225px; border-top:1px solid #e4d260;}
+.le-story-sixF .le-story-content .le-cont-right>div{float:left;}
+.le-story-sixF .le-story-content .le-cont-right .le-right-box{margin-left:20px;}
+
+.le-story-sevenF .le-contH{padding-left:5px; height:50px; line-height:50px;}
+.le-story-sevenF .le-contH span{color: #444; font-size: 14px;}
+.le-story-sevenF .le-story-cont{border-top:1px solid #c80000;}
+.le-story-sevenF ul{margin-left:-16px;}
+.le-story-sevenF ul li{float:left; position:relative; margin-left:16px; width:288px; height:180px; background:url(http://img2.hdletv.com/ag/20160822/default/11317452681294369) 0 0 no-repeat;}
+.le-story-sevenF ul li span{position:absolute;}
+.le-story-sevenF ul li .le-movie-canPlay{width:34px; height:34px; top:61px; left:125px; border-radius:100%; border:1px solid #fff;}
+.le-story-sevenF ul li .le-movie-canPlay i{display:block; height:34px; line-height:34px; text-align:center; font-size:16px; color:#fff;}
+.le-story-sevenF ul li .le-movie-des{padding: 0 20px; width:248px; height:35px; line-height:35px; bottom:0; left:0; background-color:rgba(51,51,51,0.6); color:#fff;}
+.le-story-sevenF ul li:hover .le-movie-canPlay{background:#c80000; border:1px solid transparent;}
+
+.le-story-eightF .le-cont>ul,.le-story-eightF .le-cont>div{float:left;}
+.le-story-eightF .le-cont .imgCont-last{padding-top:10px;}
+.le-story-eightF .le-cont .le-commit-cont,.le-story-eightF .le-cont .le-media-cont{margin-left:15px; width:468px; height:268px; border:1px solid #e1e1e1;}
+.le-story-eightF .le-cont .commit-conH,.le-story-eightF .le-cont .le-mediaH {padding-left:10px; height: 50px; border-bottom: 1px solid #fbedcd;}
+.le-story-eightF .le-cont .commit-conH i,.le-story-eightF .le-cont .le-mediaH i{font-size:20px; height:50px; line-height:50px; vertical-align:middle;}
+.le-story-eightF .le-cont .commit-conH span,.le-story-eightF .le-cont .le-mediaH span{font-size:14px;}
+
+.le-story-eightF .le-cont .le-commit-cont .commit-box{position:relative; height:217px; overflow:hidden;}
+.le-story-eightF .le-cont .le-commit-cont .commit-box ul{position:absolute; top:0; }
+.le-story-eightF .le-cont .le-commit-cont .commit-box ul li{padding:13px 14px 12px 30px; width:424px; height:80px;}
+.le-story-eightF .le-cont .le-commit-cont .commit-box ul li p:nth-child(1){float:left; width:94px; height:80px;}
+.le-story-eightF .le-cont .le-commit-cont .commit-box ul li p:nth-child(2){float:right; width: 305px;}
+.le-story-eightF .le-commit-cont .commit-box ul li p:nth-child(2) span{display: block; overflow:hidden;  white-space:nowrap; text-overflow:ellipsis;}
+.le-story-eightF .le-commit-cont .commit-box ul li p:nth-child(2) span:nth-child(1){font-size:14px; color:#333; line-height:34px; }
+.le-story-eightF .le-commit-cont .commit-box ul li p:nth-child(2) span:nth-child(2){color: #999; height:40px; line-height:20px;}
+
+.le-story-eightF .le-media-cont ul{float:left;}
+.le-story-eightF .le-media-cont .le-media-firUl li{width:308px; height:48px; border:1px solid #fff;}
+.le-story-eightF .le-media-cont .le-media-firUl li .le-media-num{float:left; width:48px; height:48px; line-height:48px; text-align:center; color:#828282;}
+.le-story-eightF .le-media-cont .le-media-firUl li .le-media-des{float:left; padding-left:12px; width:236px; height:48px; line-height:48px; color:#666; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.le-story-eightF .le-media-cont .le-media-lastUl{width:158px; height:218px; overflow:hidden;}
+.le-story-eightF .le-media-cont .le-media-lastUl li{display:none}
+.le-story-eightF .le-media-cont .le-media-lastUl .curImg{display:block;}
+
+/* 选项卡效果  */
+.le-story-eightF .le-media-cont .le-media-firUl .curMedia{border:1px solid #f60;}
+.le-story-eightF .le-media-cont .le-media-firUl .curMedia .le-media-num{background:#f60; color:#fff;}
+
+/*  右侧飘窗 */
+.le-tools{position:fixed; padding:17px 0; width:35px; bottom:120px; right:0;background-color:#efefef; border-radius:17px;}
+.le-tools ul li div{margin:1px; position:relative; width:30px; height:30px; border:1px solid #efefef; border-radius:16px; text-align:center}
+.le-tools ul li div i{display:block; font-size:16px; height:30px; line-height:30px; text-align:center;}
+.le-tools ul li .le-tools-hover{display:none; position:absolute; padding:5px 10px; background-color: #efefef; height:20px; line-height:20px; color:#000; right:40px; top:1px; white-space: nowrap; border-radius:3px;}
+.le-tools ul li .le-tools-hover i{position:absolute; right:-17px; top:-2px; font-size:30px; color:#efefef;}
+.le-tools ul .curTool div{background:#fff; border:1px solid #ccc;}
+
+/* 楼层导航  */
+.le-fixd-stair{position:fixed; top:98px; left:282px;}
+.le-stair ul li{margin-bottom:4px; padding:5px; background:#f9f9f9; width:56px; text-align:center;}
+.le-stair ul li span{line-height:20px;}
+.le-stair ul li span:nth-child(1){display:none;}
+
+/*  绝对定位的楼层导航  */
+.le-ab-stair{position:absolute; left:-70px; top:0;}
+
+/*  当前楼层  */
+.le-stair ul .stairCur{padding:8px 15px 9px 15px; background:#2d6cd4; width:36px;}
+.le-stair ul .stairCur span:nth-child(1){display:block; font-size:14px; color:#fff;}
+.le-stair ul .stairCur span:nth-child(2){line-height:18px; color:#fff;}
+
+/* toTop */
+.le-toTop div{position:fixed; width:36px; height:36px; bottom:50px; right:0; border: 1px solid #efefef; border-radius:100%; text-align:center; background:#efefef;}
+.le-toTop div i{font-size:20px; height:36px; line-height:36px;}
+.le-toTop div:hover {background:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
